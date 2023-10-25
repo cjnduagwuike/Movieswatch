@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: white;
+}
+
+.movieheader{
+    font-size: 1.2rem;
+    color: hsla(200, 100%, 95%, 1);
+}
+.movieheader p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 1.4rem auto;
+}
+.search-btn{
+    align-items: center;
+    border-radius: 5px;
+}
+.search-btn input{
+    outline: none;
+    border: none;
+    padding: .5rem .3rem;
+    font-size: .9rem;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+
+@media screen and (min-width: 750px) {
+    .header{
+        width: 90%;
+        padding: 1rem 0;
+    }
+    .movieheader p{
+        font-size: 1.7rem;
+    }
+    .search-btn input{
+        width: 50vh;
+    }
+    .sm-search{
+        display: none;
+    }
+    .search-btn input{
+        padding: .8rem .5rem;
+        font-size: 1rem;
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .header{
+        width: 90%;
+        padding: 1rem 0;
+    }
+    .movieheader p{
+        font-size: 1.7rem;
+    }
+    .search-btn input{
+        width: 50vh;
+    }
+    .sm-search{
+        display: none;
+    }
+    .search-btn input{
+        padding: .8rem .5rem;
+        font-size: 1rem;
+    }
+}
+/*Movie container for mobile screen*/
+.movieContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5rem;
+    padding-bottom: 2rem;
+}
+.movieCard{
+    margin: .5rem 0;
+}
+
+.moviePoster{
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.movieTitle{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: .6rem 0;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 1024px) {
+.movieContainer{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.movieCard{
+    margin: .6rem;
+    width: 200px;
+}}
+footer{
+    background-color: #A01D1E;
+    font-weight: 600;
+    margin-top: 1rem;
+    padding: 1rem 1.1rem;
+}
+.footerContainer{
+    display: flex;
+    justify-content: space-between;
+}

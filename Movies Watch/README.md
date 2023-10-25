@@ -1,0 +1,1 @@
+This project is subject to copyright laws.
